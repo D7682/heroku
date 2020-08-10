@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
     res.send(people);
 })
 
-router.post("/:firstName", (req, res) => {
+router.post("/", (req, res) => {
     let x = people.find( x => x.firstName === req.params.firstName)
 
     if(!x){
