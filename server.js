@@ -9,7 +9,7 @@ app.use("/people", require("./routes/people"));
 
 
 app.get('/', (req, res) => {
-    res.render("index")
+    res.render("index.hbs")
 })
 
 

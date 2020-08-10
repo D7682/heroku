@@ -9,7 +9,7 @@ const people = [
 ];
 
 router.get("/", (req, res) => {
-    res.render("index.hbs");
+    res.send(people);
 })
 
 router.post("/", (req, res) => {
