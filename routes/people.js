@@ -13,7 +13,7 @@ router.get("/", (req, res) => {
 })
 
 router.post("/", (req, res) => {
-    let x = people.find( x => x.firstName === req.params.firstName)
+    let x = people.find( x => req.params.firstName)
 
     if(!x){
         return res.send(people.push({firstName: req.params.firstName}) && console.log("The name has been posted"))
